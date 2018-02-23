@@ -4,7 +4,7 @@
 // @version      20180223.0
 // @description  Ignore .orderReplenish & .soldOut in PChome search page.
 // @author       Gea-Suan Lin <darkkiller@gmail.com>
-// @license      MIT license
+// @license      MIT
 // @match        https://ecshweb.pchome.com.tw/search/*
 // @grant        none
 // ==/UserScript==
