@@ -1,5 +1,7 @@
 # pchome-search-enhancement
 
+Make unavailable items gray.
+
 ## Installation
 
 * https://greasyfork.org/en/scripts/38812-pchome-search-enhancement
