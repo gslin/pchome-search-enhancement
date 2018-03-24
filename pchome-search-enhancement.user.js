@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PChome search enhancement
 // @namespace    https://wiki.gslin.org/wiki/PChomeSearchEnhancement
-// @version      20180324.3
+// @version      20180324.4
 // @description  Ignore non-buyable items in PChome search page.
 // @author       Gea-Suan Lin <darkkiller@gmail.com>
 // @license      MIT
@@ -17,10 +17,10 @@
     document.getElementsByTagName('head')[0].appendChild(sheet);
 
     let content = document.getElementById('CONTENT');
-    let tr = 1 / 3;
+    let selector = '.col3f:has(li.orderNotyet), .col3f:has(li.orderReplenish), .col3f:has(li.soldOut)';
 
     let ob = new window.MutationObserver(function(el){
-        window.jQuery('.col3f:has(li.orderNotyet), .col3f:has(li.orderReplenish), .col3f:has(li.soldOut)', el.target).addClass('nonbuyable');
+        window.jQuery(selector, el.target).addClass('nonbuyable');
     });
 
     ob.observe(content, {
@@ -28,5 +28,5 @@
         subtree: true,
     });
 
-    window.jQuery('.col3f:has(li.orderNotyet), .col3f:has(li.orderReplenish), .col3f:has(li.soldOut)', el.target).addClass('nonbuyable');
+    window.jQuery(selector).addClass('nonbuyable');
 })();
