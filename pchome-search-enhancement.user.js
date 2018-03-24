@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PChome search enhancement
 // @namespace    https://wiki.gslin.org/wiki/PChomeSearchEnhancement
-// @version      20180223.0
+// @version      20180324.0
 // @description  Ignore .orderReplenish & .soldOut in PChome search page.
 // @author       Gea-Suan Lin <darkkiller@gmail.com>
 // @license      MIT
