@@ -16,7 +16,7 @@
     var tr = 1 / 3;
 
     var ob = new window.MutationObserver(function(el){
-        window.jQuery('.col3f:has(li.orderReplenish), .col3f:has(li.soldOut)', el.target).css('opacity', tr);
+        window.jQuery('.col3f:has(li.orderNotyet), .col3f:has(li.orderReplenish), .col3f:has(li.soldOut)', el.target).css('opacity', tr);
     });
 
     ob.observe(content, {
@@ -24,5 +24,5 @@
         subtree: true,
     });
 
-    window.jQuery('.col3f:has(li.orderReplenish), .col3f:has(li.soldOut)', content).css('opacity', tr);
+    window.jQuery('.col3f:has(li.orderNotyet), .col3f:has(li.orderReplenish), .col3f:has(li.soldOut)', content).css('opacity', tr);
 })();
