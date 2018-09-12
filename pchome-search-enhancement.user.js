@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PChome search enhancement
 // @namespace    https://wiki.gslin.org/wiki/PChomeSearchEnhancement
-// @version      20180729.0
+// @version      0.20180912.0
 // @description  Ignore non-buyable items in PChome search page.
 // @author       Gea-Suan Lin <darkkiller@gmail.com>
 // @license      MIT
@@ -19,7 +19,7 @@
     // Add three buttons inside #FilterBar.
     let toolbar = document.createElement('span');
     toolbar.innerHTML = '<button id="btn_grey">Grey</button> <button id="btn_hide">Hide</button> <button id="btn_disable">Disable</button>';
-    let el = document.getElementById('FilterBar');
+    let el = document.querySelector('.Cm_N .bar_spinbtn');
     if (!el) {
         return;
     }
